@@ -1,219 +1,286 @@
 
 
+\section{研究背景与问题提出}
 
-免责声明：敬请大家仔细对比本模版与官方word转pdf后的差别，自行确定是否采用。
-如果采用博后的分阶段评审，限制只能用word，那么本项目就寿终正寝了。个人认为，2026年系统仍然上传PDF，只要人眼无法分辨与官方区别，就可以。
+科学研究是推动社会进步和技术创新的核心动力，而科研资助制度则是决定科学资源配置效率的关键。当前，全球主要科研资助体系普遍采用同行评议（peer review）作为项目遴选的核心机制。在这一制度下，评审专家通过对申请书的科学价值、创新性和可行性进行综合评估，对申请项目进行排序，资助机构依据排序结果决定最终资助对象。
+
+然而，随着全球科研竞争的加剧和申请数量的激增，传统同行评议制度面临日益严峻的挑战。当申请数量巨大且整体质量较高时，评审专家往往需要在差异极小的申请中作出明确排序，这显著增加了评审的时间与认知成本。研究表明，在难以精确比较项目优劣的情况下，评审判断更容易依赖申请人声誉、研究路径成熟度或项目成功确定性等并非直接反映科研潜力的信号，从而表现出偏见和风险规避倾向\citep{fangResearchFundingCase2016,franzoniUncertaintyRisktakingScience2023}。
+
+上述评审环境进一步塑造了申请人的策略行为。为在竞争中获得优势，申请人往往将大量时间和精力投入到研究计划书的反复打磨与包装中，挤占了用于实际科研的时间。Schweiger等（2024）在PNAS发表的综述全面分析了竞争资助的经济成本、认知成本和社会伦理成本。研究表明，撰写一份新申请通常需要25-50天，而平均资助率仅为10-25\%，这意味着每资助一个项目需要消耗100-500人日的申请工作量。竞争资助系统不仅造成巨大的申请和评审时间成本，还可能导致研究人员心理健康问题、工作生活失衡以及不当研究行为。
+
+更为根本的问题是：真正具有突破性的高不确定性项目，往往在评审中被系统性排斥。在高度依赖排序的竞争环境中，申请人更倾向于选择成功概率较高、路径清晰的研究方向，而对创新性强但风险较高、尚未形成共识的研究持谨慎态度，使潜在突破性研究处于不利位置（Azoulay et al., 2011; Manso, 2011）。这一现象的背后是评审者在不确定性环境下的系统性决策偏差——由于损失厌恶和前景理论中的风险规避倾向，评审者往往低估高风险高回报项目的价值。
+
+针对上述问题，近年来部分国家和科研资助机构开始在同行评议基础上引入部分随机机制（partial lottery）。该机制的核心设计是：评审专家仅筛选出达到质量标准的合格项目，而不再进行精细化排序，最终资助对象通过随机方式从合格项目中产生。新西兰健康研究委员会（HRC）自2013年起开始采用这一机制，瑞士国家科学基金会（SNSF）、德国大众基金会（Volkswagen Foundation）、奥地利科学基金（FWF）、英国和加拿大的部分资助项目也已采用随机要素（De Peuter \& Conix, 2022; Barnett et al., 2024）。荷兰医学院校几十年来一直采用部分抽签机制进行录取决策。
+
+然而，该机制对评审判断和申请人行为的影响仍缺乏系统研究。具体而言，当评审专家知晓最终资助将通过随机方式产生时，其筛选标准是否会发生变化？申请人是否会更愿意提交创新性更强但风险更高的研究计划？部分随机机制能否真正缓解过度竞争带来的效率损失？这些问题的回答不仅关系到机制设计的优化方向，更涉及对科研资助体系中行为激励机制的深层理解。
+
+\section{核心科学问题与研究价值}
+
+本研究关注的核心科学问题是：在同行评议筛选基础上引入部分随机机制，将如何影响科研资助中的评审判断与申请策略？从而影响科研资助的效率。
+
+这一问题的研究具有重要的理论价值和实践意义：
+
+（1）理论价值：拓展行为经济学在资源分配领域的应用。传统经济学理论通常假设决策者能够理性评估项目质量并作出最优选择。然而，现实中的评审过程充满不确定性、认知局限和策略考量。本研究将行为经济学的理论框架引入科研资助研究，关注评审专家在面临不同激励机制时的判断偏差，以及申请人在不同竞争环境下的策略选择（Gigerenzer et al., 2025）。更重要的是，部分随机机制的研究价值不仅限于科研资助领域——在需要主观评估的资源分配场景中，如高校招生录取、企业人才招聘、创业投资筛选、学术期刊审稿等，都面临着类似的评审困境。本研究的理论框架和分析方法可为这些领域的机制改革提供借鉴，具有广泛的学术外溢价值。
+
+（2）理论价值：揭示随机机制对创新激励的行为效应。创新活动的核心特征是高不确定性和长期回报周期。传统排序竞争机制可能导致申请人过度规避风险，选择安全的研究方向。Manso（2011）的经典研究表明，最优创新激励契约应表现出对早期失败的容忍和对长期成功的奖励。本研究通过理论模型和实验方法，系统分析部分随机机制如何改变申请人的风险态度和创新激励，特别是探索-利用权衡（exploration-exploitation trade-off）的动态演化。
+
+（3）实践价值：为科研资助制度改革提供实证依据。当前，国家自然科学基金委员会正面临申请量激增、评审负担加重、青年科研人员竞争压力增大等现实挑战。Carnehl等（2025）的最新综述指出，科研资助设计中的关键问题包括：如何在分配阶段最小化评估成本的同时选择最优申请，如何在资助后阶段有效监督受资助者。本研究的发现将为中国科研资助制度的优化提供直接的实证依据，特别是在如何平衡评审效率与创新激励、如何设计更合理的筛选标准等关键问题上提供科学参考。
+
+（4）实践价值：推动科研评价体系的科学化。本研究采用理论建模、实验室实验、田野实验、问卷调查、文献计量和计算机仿真相结合的多方法研究设计，能够控制现实环境中难以观察的变量，精确识别不同机制对行为的因果效应。这种方法论创新可为科研评价研究提供新的分析工具，推动该领域从描述性研究向机制性研究的转变。
+
+\section{国内外研究现状与发展动态}
+\subsection{科研资助制度的效率与公平研究}
+
+近年来，学术界对科研资助制度的效率和公平性展开了广泛讨论。Aagaard等（2020）通过系统性文献综述发现，科研资助的集中化趋势并未带来相应的产出效益提升，反而可能产生边际收益递减效应。Mongeon等（2016）的研究表明，获得最多资助的精英研究人员在产出和影响力方面并不突出。Bol等（2018）的研究揭示了科研资助中的马太效应——已获资助者更容易获得后续资助，这种累积优势可能加剧资源分配的不平等。
+
+在资助效果评估方面，Li和Agha（2015）利用美国国立卫生研究院（NIH）超过13万项资助数据的研究表明，同行评议评分与研究产出质量存在显著正相关。然而，Ding和Moreira（2025）的最新研究采用双重稳健差分模型发现，在控制选择偏差和反向因果后，科研资助对受资助者产出质量和数量的影响并不显著，提示既有研究可能存在内生性问题。Barnett等（2024）利用新西兰HRC的随机化试验发现，获得资助对研究者生产力的影响有限。
+
+\subsection{随机机制在资源配置中的应用研究}
+
+随机机制在资源分配中的应用是经济学和运筹学的经典议题。Arnosti和Shi（2020）研究了经济适用房分配中的抽签与轮候机制，发现独立抽签与轮候机制在均衡状态下产生相同结果，但共同抽签可改善匹配质量。Arnosti（2023）进一步分析了学校选择中的抽签设计，揭示了单一抽签与独立抽签之间的权衡关系。
+
+在科研资助领域，Fang和Casadevall（2016）首次系统论证了改良抽签（modified lottery）的可行性，主张在同行评议筛选合格项目后通过随机方式确定最终资助对象。De Peuter和Conix（2022）进一步阐述了改良抽签的理论基础，认为这种有组织的随机性既能保留同行评议的核心价值，又能减少评审偏差和过度竞争。Feliciani等（2024）构建了资助抽签的扩展分类体系，通过蒙特卡洛模拟评估了不同抽签类型在认识正确性、无偏公平性和分配公平性方面的表现。
+
+\subsection{机制设计与成本验证研究}
+
+Ben-Porath、Dekel和Lipman（2014）在机制设计领域做出了开创性贡献。他们研究了在costly verification环境下的最优分配机制，证明最优机制具有以下形式：资助机构宣布一个质量阈值，要求所有申请人自报质量。如果所有自报都低于阈值，则通过抽签随机分配；如果至少有一个自报高于阈值，则验证最高自报，若验证为真则授予该申请人。这一favored-agent mechanism为部分随机机制提供了严格的理论基础。Carnehl等（2025）的综述进一步指出，当验证成本较高时，最优机制会使用更高的阈值，从而减少深度评审次数，更频繁地通过抽签分配。
+
+\subsection{创新激励与探索-利用权衡研究}
+
+Manso（2011）的经典论文使用多臂老虎机模型（multi-armed bandit model）分析了最优创新激励机制。研究表明，由于创新活动具有高度不确定性和长期回报周期，最优激励契约应表现出对早期失败的容忍（甚至奖励）和对长期成功的奖励。Azoulay等（2011）通过比较霍华德·休斯医学研究所（HHMI）研究员与NIH资助者的实证研究，验证了Manso的理论预测：容忍早期失败的资助模式能显著促进高影响力产出和研究方向的探索性创新。Li等（2024）对中国国家自然科学基金优秀青年科学基金项目的研究发现，该资助虽提升了受资助者的产出数量和引用影响，但反而降低了研究的颠覆性指数，提示人才类资助可能促使研究者采取利用性而非探索性研究策略。
+
+\subsection{竞争成本与评审行为研究}
+
+Gross和Bergstrom（2019）的竞赛模型分析揭示了科研资助竞争的内在低效性。Schweiger等（2024）在PNAS发表的综述全面分析了竞争资助的经济成本、认知成本和社会伦理成本。研究表明，竞争资助系统不仅造成巨大的申请和评审时间成本，还可能导致研究人员心理健康问题、工作生活失衡以及不当研究行为。Adda和Ottaviani（2024）构建了非市场资源分配的理论模型，揭示了相对评价悖论：当预算不足以资助所有申请者时，如果信息足够对称，均衡将瓦解。
+
+\subsection{现有研究的不足与本研究的定位}
+
+尽管上述研究为理解科研资助制度提供了重要基础，但仍存在以下不足：
+
+第一，缺乏对部分随机机制行为效应的系统研究。现有关于改良抽签的讨论多为规范性分析或模拟研究，缺乏基于行为数据的实证检验。
+
+第二，理论模型与实验验证的结合不足。既有研究或侧重于理论建模，或侧重于实证描述，缺乏将两者有机结合的研究设计。
+
+第三，对中国情境的适用性研究缺失。现有研究主要基于欧美发达国家的资助体系，对中国科研资助环境的特殊性关注不足。
+
+本研究将填补上述研究空白，从行为经济学视角出发，通过理论模型构建、实验室实验设计、田野实验、文献计量分析、计算机仿真和科研人员问卷调查，系统评估部分随机资助机制对评审行为和申请策略的影响，为中国科研资助制度改革提供科学依据。
+
+% \textcolor{red}{=======}
+
+% 免责声明：敬请大家仔细对比本模版与官方word转pdf后的差别，自行确定是否采用。
+% 如果采用博后的分阶段评审，限制只能用word，那么本项目就寿终正寝了。个人认为，2026年系统仍然上传PDF，只要人眼无法分辨与官方区别，就可以。
+
+% \textbf{只需要修改`sections`,`figures`,`ref.bib`，那么如果模版更新，只需要拷贝这三项过去直接编译，就是最新版。}
+
+% \section{自定义设置方法}
+% 【常规】自定义设置方法
+
+% \textbf{只需要修改`sections/个性化设置.sty`文件。}
+% \begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
+% %【1】标题颜色
+% \definecolor{HighLight}{RGB}{0,0,0}
+% %【2】正文字体设置
+% %\global\MS@kaitrue\global\MS@songfalse%楷体正文
+% \global\MS@kaifalse\global\MS@songtrue%宋体正文
+% %【3】是否屏蔽正文
+% \global\MS@offtrue\global\MS@onfalse%屏蔽正文
+% %\global\MS@ontrue\global\MS@offfalse%不屏蔽正文
+% \end{lstlisting}
+
+% 【高阶】
+% 需要修改`nsfc.sty`文件中的定义。**如非必要，不建议修改。**
+
+% \section{编译方法}
+% \begin{enumerate}
+% 	\item 编译：XeLaTex->bibtex->XeLaTeX->XeLaTeX
+% 	\item 排错：多看编译错误，多查询错误解决方法；编译警告，只要不影响PDF，就不用管。本模版多人使用，可以认为不存在编译错误。
+% \end{enumerate}
 
 
-\textbf{只需要修改`sections`,`figures`,`ref.bib`，那么如果模版更新，只需要拷贝这三项过去直接编译，就是最新版。}
+% \section{编辑方法}
+% %%%%%%%%
+% %\newpage
+% \vspace{-5pt}
 
-\section{自定义设置方法}
-【常规】自定义设置方法
+% \begin{figure}[h!]
+% 	\centering %图片居中
+% 	\includegraphics[width=6cm]{figures/xiugai.png}
+% 	\captionsetup{justification=centering} %图题居中
+% 	\caption{项目文件夹结构}
+% \end{figure}
+% 只需要修改图中蓝色选中区域文件，即\verb|sections, figures, ref.bib|即可。其他剩余文件，可以直接采用模版替换，编译就是最新版。
 
-\textbf{只需要修改`sections/个性化设置.sty`文件。}
-\begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
-%【1】标题颜色
-\definecolor{HighLight}{RGB}{0,0,0}
-%【2】正文字体设置
-%\global\MS@kaitrue\global\MS@songfalse%楷体正文
-\global\MS@kaifalse\global\MS@songtrue%宋体正文
-%【3】是否屏蔽正文
-\global\MS@offtrue\global\MS@onfalse%屏蔽正文
-%\global\MS@ontrue\global\MS@offfalse%不屏蔽正文
-\end{lstlisting}
+% \subsubsection{章节}\label{subsubsec:t}
 
-【高阶】
-需要修改`nsfc.sty`文件中的定义。**如非必要，不建议修改。**
-
-\section{编译方法}
-\begin{enumerate}
-	\item 编译：XeLaTex->bibtex->XeLaTeX->XeLaTeX
-	\item 排错：多看编译错误，多查询错误解决方法；编译警告，只要不影响PDF，就不用管。本模版多人使用，可以认为不存在编译错误。
-\end{enumerate}
-
-
-\section{编辑方法}
-%%%%%%%%
-%\newpage
-\vspace{-5pt}
-
-\begin{figure}[h!]
-	\centering %图片居中
-	\includegraphics[width=6cm]{figures/xiugai.png}
-	\captionsetup{justification=centering} %图题居中
-	\caption{项目文件夹结构}
-\end{figure}
-只需要修改图中蓝色选中区域文件，即\verb|sections, figures, ref.bib|即可。其他剩余文件，可以直接采用模版替换，编译就是最新版。
-
-\subsubsection{章节}\label{subsubsec:t}
-
-\begin{itemize}
-	\item \verb|\label{subsubsect:t}|
-	引用章节\verb|\ref{subsubsec:t}|，生成为：\ref{subsubsec:t}。这个样式可能不是你想要的，那种情况下，就手敲吧！申请书不像论文，这种情况应该没几个。
-	\item 章节标题的话，如果编号、字体啥的不喜欢，也可以手动敲。示例如下：
+% \begin{itemize}
+% 	\item \verb|\label{subsubsect:t}|
+% 	引用章节\verb|\ref{subsubsec:t}|，生成为：\ref{subsubsec:t}。这个样式可能不是你想要的，那种情况下，就手敲吧！申请书不像论文，这种情况应该没几个。
+% 	\item 章节标题的话，如果编号、字体啥的不喜欢，也可以手动敲。示例如下：
 	
-	\noindent\textcolor{blue}{\textbf{1.1 测试}}
+% 	\noindent\textcolor{blue}{\textbf{1.1 测试}}
 	
-	其中，\verb|\noindent|标识没有首行缩进。要控制缩进距离，可以用\verb|\hspace{10pt}|手动缩进。缺点就是，不能自动编号，不能自动引用。但是，申请书不像论文，这种情况应该没几个。
-\end{itemize}
+% 	其中，\verb|\noindent|标识没有首行缩进。要控制缩进距离，可以用\verb|\hspace{10pt}|手动缩进。缺点就是，不能自动编号，不能自动引用。但是，申请书不像论文，这种情况应该没几个。
+% \end{itemize}
 
-\subsubsection{字体}
-中文\textbf{粗体}；\textbf{bold} font；
-中文\textit{斜体}；\textit{italic} font；
+% \subsubsection{字体}
+% 中文\textbf{粗体}；\textbf{bold} font；
+% 中文\textit{斜体}；\textit{italic} font；
 
-克制使用以下标注（不用更好），防止专家眼花缭乱。\textul{添加下划线}；\textull{添加双下划线}；\textuw{添加下弯线}；\textud{添加下点线}。
+% 克制使用以下标注（不用更好），防止专家眼花缭乱。\textul{添加下划线}；\textull{添加双下划线}；\textuw{添加下弯线}；\textud{添加下点线}。
 
-全文改宋体，可以修改nsfc.sty的MS部分字体。
+% 全文改宋体，可以修改nsfc.sty的MS部分字体。
 
-可选的就是\verb|\zhkai,\enkai,\zhsong,\ensong|。
+% 可选的就是\verb|\zhkai,\enkai,\zhsong,\ensong|。
 
-\subsubsection{文献}
-普通引用\cite{test}；上标引用\citess{test}；多篇文章\citess{test,test2,test3}。
+% \subsubsection{文献}
+% 普通引用\cite{test}；上标引用\citess{test}；多篇文章\citess{test,test2,test3}。
 
-有注音的英文：\cite{test}。
+% 有注音的英文：\cite{test}。\citep{test}
 
-参考期刊\cite{test}；
-参考图书\cite{test2}；
-参考会议\cite{test5}；
-参考链接\cite{test4}；
-参考文件\cite{test6}。
+% 参考期刊\cite{test}；
+% 参考图书\cite{test2}；
+% 参考会议\cite{test5}；
+% 参考链接\cite{test4}；
+% 参考文件\cite{test6}。
 
-对于中文参考文献，bib条目中需要有language = {zh}，参见\cite{test2}。
+% 对于中文参考文献，bib条目中需要有language = {zh}，参见\cite{test2}。
 
-对于非数字形式/作者年份形式的参考文献引用，阅读nsfc.sty对应这一部分进行修改：
-\begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
-\usepackage[square,numbers,sort&compress]{natbib}%数字引用[1]
-\bibliographystyle{bibs/gbt7714-numerical}
-%\usepackage[round,sort]{natbib}%作者年引用Author(2022)
-%\bibliographystyle{bibs/gbt7714-author-year}
-%bst定制方法：修改对应.bst文件的FUNCTION {load.config}部分设置
-\end{lstlisting}
+% 对于非数字形式/作者年份形式的参考文献引用，阅读nsfc.sty对应这一部分进行修改：
+% \begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
+% \usepackage[square,numbers,sort&compress]{natbib}%数字引用[1]
+% \bibliographystyle{bibs/gbt7714-numerical}
+% %\usepackage[round,sort]{natbib}%作者年引用Author(2022)
+% %\bibliographystyle{bibs/gbt7714-author-year}
+% %bst定制方法：修改对应.bst文件的FUNCTION {load.config}部分设置
+% \end{lstlisting}
 
-要进一步定制bst的话，需要修改对应.bst文件的FUNCTION {load.config}部分设置。
-例如，如果需要设置是否要文献类型标识，可以修改bibs/gbt7714-numerical.bst文件或bibs/gbt7714-author-year.bst文件的以下部分：
-\begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
-  #0 'show.mark := %【可修改】如果不想要[J][M]这种文献类型标识，改为#0；想要文献类型标识改为#1
-\end{lstlisting}
+% 要进一步定制bst的话，需要修改对应.bst文件的FUNCTION {load.config}部分设置。
+% 例如，如果需要设置是否要文献类型标识，可以修改bibs/gbt7714-numerical.bst文件或bibs/gbt7714-author-year.bst文件的以下部分：
+% \begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
+%   #0 'show.mark := %【可修改】如果不想要[J][M]这种文献类型标识，改为#0；想要文献类型标识改为#1
+% \end{lstlisting}
 
-\subsubsection{列表}
-无序列表\footnote{值得注意的是，不需要一定要用列表环境，用加粗、换行、缩进同样能达到效果。
-	因为咱们的初衷，还是LaTeX在排版文献和公式上有优势，发挥这一个优势就行了，其他部分不需要强行套用。文本本身还是最重要、需要大家投入精力的部分。}的例子：
-\begin{itemize}[left= 50pt]
-	\item[-] 第一条，第一条的内容可能很长长长长长长长长长长长长长长长长长长长长；
-	\item[-] 第二条。
-\end{itemize}
+% \subsubsection{列表}
+% 无序列表\footnote{值得注意的是，不需要一定要用列表环境，用加粗、换行、缩进同样能达到效果。
+% 	因为咱们的初衷，还是LaTeX在排版文献和公式上有优势，发挥这一个优势就行了，其他部分不需要强行套用。文本本身还是最重要、需要大家投入精力的部分。}的例子：
+% \begin{itemize}[left= 50pt]
+% 	\item[-] 第一条，第一条的内容可能很长长长长长长长长长长长长长长长长长长长长；
+% 	\item[-] 第二条。
+% \end{itemize}
 
-有序列表的例子：
-\begin{enumerate}[left= 50pt]
-	\item 第一条，第一条的内容可能很长长长长长长长长长长长长长长长长长长长长；
-	\item 第二条。
-\end{enumerate}
+% 有序列表的例子：
+% \begin{enumerate}[left= 50pt]
+% 	\item 第一条，第一条的内容可能很长长长长长长长长长长长长长长长长长长长长；
+% 	\item 第二条。
+% \end{enumerate}
 
-两个带圈文字的实现方法：
-\textcircled{\raisebox{-0.8pt}{1}}
-\textcircled{\textbf{\small 1}}
+% 两个带圈文字的实现方法：
+% \textcircled{\raisebox{-0.8pt}{1}}
+% \textcircled{\textbf{\small 1}}
 
-注意，由于列表的缩进，不同使用者可能偏向并不一样。本模版用的enumitem包，阅读他的文档进行个性化，其文档在：https://www.ctan.org/pkg/enumitem
-
-
-\subsubsection{公式}
-
-数学字体：
-\verb|\mathcal|：$\mathcal{XYZ},\mathcal{H}^T$，
-\verb|\mathbb|：$\mathbb{XYZ}$，
-\verb|\mathbf|：$\mathbf{XYZ}$，这个往往不加粗，需要用
-\verb|\symbf|：$\symbf{XYZ}$，
-\verb|\symbfit|：$\symbfit{XYZ}$
-
-\begin{itemize}
-	\item 标量/普通变量：$x,t$
-	\item 向量：$\symbfit{v}$；矩阵：$\symbfup{A}$
-\end{itemize}
-
-编号公式如下：（这个圆括号的内容只是为了方便看公式与文字的行间距）
-\begin{align}
-\begin{cases}
-a\\b
-\end{cases}
-\end{align}
-以及（这个圆括号的内容只是为了方便看公式与文字的行间距）
-\begin{equation}
-E = mC^2
-\end{equation}
-\begin{align}
-	\max_{x \in C} g(x).
-\end{align}
-不编号公式如下：（这个圆括号的内容只是为了方便看公式与文字的行间距）
-\begin{equation*}
-	\begin{cases}
-		a\\b
-	\end{cases}
-\end{equation*}
-\verb|$$x=y$$|类型公式：（半行间距）
-$$
-	\begin{cases}
-		a\\b
-	\end{cases}
-$$
-公式的上下间距参见nsfc.sty中公式上下间距部分。
+% 注意，由于列表的缩进，不同使用者可能偏向并不一样。本模版用的enumitem包，阅读他的文档进行个性化，其文档在：https://www.ctan.org/pkg/enumitem
 
 
+% \subsubsection{公式}
+
+% 数学字体：
+% \verb|\mathcal|：$\mathcal{XYZ},\mathcal{H}^T$，
+% \verb|\mathbb|：$\mathbb{XYZ}$，
+% \verb|\mathbf|：$\mathbf{XYZ}$，这个往往不加粗，需要用
+% \verb|\symbf|：$\symbf{XYZ}$，
+% \verb|\symbfit|：$\symbfit{XYZ}$
+
+% \begin{itemize}
+% 	\item 标量/普通变量：$x,t$
+% 	\item 向量：$\symbfit{v}$；矩阵：$\symbfup{A}$
+% \end{itemize}
+
+% 编号公式如下：（这个圆括号的内容只是为了方便看公式与文字的行间距）
+% \begin{align}
+% \begin{cases}
+% a\\b
+% \end{cases}
+% \end{align}
+% 以及（这个圆括号的内容只是为了方便看公式与文字的行间距）
+% \begin{equation}
+% E = mC^2
+% \end{equation}
+% \begin{align}
+% 	\max_{x \in C} g(x).
+% \end{align}
+% 不编号公式如下：（这个圆括号的内容只是为了方便看公式与文字的行间距）
+% \begin{equation*}
+% 	\begin{cases}
+% 		a\\b
+% 	\end{cases}
+% \end{equation*}
+% \verb|$$x=y$$|类型公式：（半行间距）
+% $$
+% 	\begin{cases}
+% 		a\\b
+% 	\end{cases}
+% $$
+% 公式的上下间距参见nsfc.sty中公式上下间距部分。
 
 
-\subsubsection{图}
-图片的例子：
-\begin{figure}[h!]
-\centering %图片居中
-\includegraphics[width=2cm]{figures/xiugai.png}
-\captionsetup{justification=centering} %图题居中
-\caption{这是图题This is caption}
-\end{figure}
-
-图题和表头若想取消加粗，去掉nsfc.sty中caption部分的\verb|\bfseries|即可。
 
 
-\subsubsection{表}
-在表格内的第一行设置\verb|\zhkai\ensong\selectfont|，来选择字体。
+% \subsubsection{图}
+% 图片的例子：
+% \begin{figure}[h!]
+% \centering %图片居中
+% \includegraphics[width=2cm]{figures/xiugai.png}
+% \captionsetup{justification=centering} %图题居中
+% \caption{这是图题This is caption}
+% \end{figure}
 
-其中\verb|\zhkai\zhsong\enkai\ensong|可以根据需要选择。
-\begin{table}[htbp]
-	\zhkai\ensong\selectfont%设置表格字体
-	\centering  % 显示位置为中间
-	\caption{表格}  % 表格标题
-	\label{table1}  % 用于索引表格的标签
-	%字母的个数对应列数，|代表分割线
-	% l代表左对齐，c代表居中，r代表右对齐
-	\begin{tabular}{|c|c|c|c|}  
-		\hline  % 表格的横线
-		& & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
-		第一列&第二列&第三列&第四列 \\  % 表格中的内容，用&分开，\\表示下一行
-		\hline
-		& & & \\[-6pt]  %可以避免文字偏上 
-		0.1&0.2&0.3&0.4 \\
-		\hline
-	\end{tabular}
-\end{table}
+% 图题和表头若想取消加粗，去掉nsfc.sty中caption部分的\verb|\bfseries|即可。
 
-\subsubsection{定义定理等}
-\begin{definition}
-这是一个定义
-\end{definition}
-\begin{theorem}
-	这是一个定理
-\end{theorem}
 
-\section{某页最后一段行距可能很窄？}
-如果没有这个问题，就不用管这个事情。
+% \subsubsection{表}
+% 在表格内的第一行设置\verb|\zhkai\ensong\selectfont|，来选择字体。
 
-行间距变化一般是在“多行蓝色模版”部分前后。因为蓝色模版文字在section里写的，latex把蓝色部分当作一个整体，可能硬要挤到这一页，而不是换新一页，导致会挤前一页的行间距，导致前一页行距异常。
-针对这种情况，模版已经使用
-\begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
-	%自动段落的行间距微调
-	\usepackage{setspace}
-	\setstretch{1.6} % 22 bp / 14 pt = 1.571
-\end{lstlisting}
-降低了这种情况发生的可能。
-如果还有，就只好添加\verb|\newpage|把它newpage到后一页上，就行了。也可以考虑分段缓解，需要写的时候注意页面的分段和字数。
+% 其中\verb|\zhkai\zhsong\enkai\ensong|可以根据需要选择。
+% \begin{table}[htbp]
+% 	\zhkai\ensong\selectfont%设置表格字体
+% 	\centering  % 显示位置为中间
+% 	\caption{表格}  % 表格标题
+% 	\label{table1}  % 用于索引表格的标签
+% 	%字母的个数对应列数，|代表分割线
+% 	% l代表左对齐，c代表居中，r代表右对齐
+% 	\begin{tabular}{|c|c|c|c|}  
+% 		\hline  % 表格的横线
+% 		& & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
+% 		第一列&第二列&第三列&第四列 \\  % 表格中的内容，用&分开，\\表示下一行
+% 		\hline
+% 		& & & \\[-6pt]  %可以避免文字偏上 
+% 		0.1&0.2&0.3&0.4 \\
+% 		\hline
+% 	\end{tabular}
+% \end{table}
+
+% \subsubsection{定义定理等}
+% \begin{definition}
+% 这是一个定义
+% \end{definition}
+% \begin{theorem}
+% 	这是一个定理
+% \end{theorem}
+
+% \section{某页最后一段行距可能很窄？}
+% 如果没有这个问题，就不用管这个事情。
+
+% 行间距变化一般是在“多行蓝色模版”部分前后。因为蓝色模版文字在section里写的，latex把蓝色部分当作一个整体，可能硬要挤到这一页，而不是换新一页，导致会挤前一页的行间距，导致前一页行距异常。
+% 针对这种情况，模版已经使用
+% \begin{lstlisting}[language=tex, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, commentstyle=\color{gray}]
+% 	%自动段落的行间距微调
+% 	\usepackage{setspace}
+% 	\setstretch{1.6} % 22 bp / 14 pt = 1.571
+% \end{lstlisting}
+% 降低了这种情况发生的可能。
+% 如果还有，就只好添加\verb|\newpage|把它newpage到后一页上，就行了。也可以考虑分段缓解，需要写的时候注意页面的分段和字数。
+
+% \textcolor{red}{=======}
 
 \begin{REF}
 \subsection*{参考文献}
