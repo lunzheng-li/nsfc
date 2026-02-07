@@ -1,20 +1,47 @@
 
 
-这里可能需要列出自己的相关文章。由于文章和依据部分的文献的格式并不一定一致，建议使用下边方法：
-\begin{lstlisting}[language=tex, basicstyle=\ttfamily\tiny, keywordstyle=\color{blue}, commentstyle=\color{gray}]
-	\begin{thebibliography}{1}
-		\bibitem{test}
-		\bibauthor{\textbf{C\"aldognetto T\@, Tenti P}}\@. 
-		\bibtitle{Microgrids Operation Based on Master–Slave Cooperative Control}
-		\bibmark{[J]}\@.
-		\bibjournal{IEEE Journal of Emerging and Selected Topics in Power Electronics}\@,
-		\bibvolume{2}\bibnumber{(4)}\thinspace{}\textnormal{:}
-		\bibpages{1081\thinspace{}\textnormal{--}\thinspace{}1088}\@,
-		\bibyear{2014}\@.
-		\url{doi: 10.1109/JESTPE.2014.2345052}\@.
-	\end{thebibliography}
-\end{lstlisting}
-效果如下。这个东西从哪里来的呢？从编译产生的\verb|.bbl|文件中拷贝过来放进来，就可以了。
+% 这里可能需要列出自己的相关文章。由于文章和依据部分的文献的格式并不一定一致，建议使用下边方法：
+% \begin{lstlisting}[language=tex, basicstyle=\ttfamily\tiny, keywordstyle=\color{blue}, commentstyle=\color{gray}]
+% 	\begin{thebibliography}{1}
+% 		\bibitem{test}
+% 		\bibauthor{\textbf{C\"aldognetto T\@, Tenti P}}\@. 
+% 		\bibtitle{Microgrids Operation Based on Master–Slave Cooperative Control}
+% 		\bibmark{[J]}\@.
+% 		\bibjournal{IEEE Journal of Emerging and Selected Topics in Power Electronics}\@,
+% 		\bibvolume{2}\bibnumber{(4)}\thinspace{}\textnormal{:}
+% 		\bibpages{1081\thinspace{}\textnormal{--}\thinspace{}1088}\@,
+% 		\bibyear{2014}\@.
+% 		\url{doi: 10.1109/JESTPE.2014.2345052}\@.
+% 	\end{thebibliography}
+% \end{lstlisting}
+% 效果如下。这个东西从哪里来的呢？从编译产生的\verb|.bbl|文件中拷贝过来放进来，就可以了。
+
+\begin{enumerate}
+\item \textbf{林谦, 余超, 伍夏威, 等} (2024).
+面向机器人系统的虚实迁移强化学习综述[J/OL].
+软件学报, 35: 711--738. DOI: 10.13328/j.cnki.jos.007006.
+\end{enumerate}
+
+% \begin{thebibliography}{1}
+% \providecommand{\natexlab}[1]{#1}
+% \providecommand{\url}[1]{#1}
+% \expandafter\ifx\csname urlstyle\endcsname\relax\else
+%   \urlstyle{same}\fi
+% \expandafter\ifx\csname href\endcsname\relax
+%   \DeclareUrlCommand\doi{\urlstyle{rm}}
+%   \def\eprint#1#2{#2}
+% \else
+%   \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+%   \let\eprint\href
+% \fi
+
+% \bibitem[林谦\ 等(2024)林谦, 余超, 伍夏威, 董银昭, 徐昕, 张强, and 郭宪]{test2}
+% 林谦, 余超, 伍夏威, 等, 2024.
+% \newblock 面向机器人系统的虚实迁移强化学习综述\allowbreak[J/OL].
+% \newblock 软件学报, 35: 711-738.
+% \newblock DOI: \doi{10.13328/j.cnki.jos.007006}.
+
+% \end{thebibliography}
 % \vspace{-50pt}
 % \begin{thebibliography}{1}
 % 	\providecommand{\bibauthor}[1]{#1}
